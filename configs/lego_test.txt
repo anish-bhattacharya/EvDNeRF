@@ -1,0 +1,48 @@
+expname = exp
+workspace = logs
+root_path = /home/anish1/evdnerf
+datadir = data/public_datasets/lego-32
+dataset_type = events-multiview
+
+nerf_type = direct_temporal
+no_batching = True
+not_zero_canonical = False
+
+use_viewdirs = True
+white_bkgd = False
+half_res = True
+do_half_precision = False
+
+N_samples = 64
+N_importance = 128
+frac_bg_rays = 0.5
+
+lrate_decay = 1000000000
+precrop_frac = 0.5
+precrop_iters = 2000
+precrop_iters_time = 20000
+
+lr_warmup_iters = 1000
+lrate = 1e-5
+N_rays = 1024
+
+i_print = 1000
+i_img = 5000
+testskip = 4
+i_weights = 5000
+N_iter = 100000
+
+pos_thresh = 0.02
+neg_thresh = 0.02
+
+random_seed = 50
+batch_over_images
+
+near = 2.0
+far = 6.0
+ev_threshold_loss = 1.0
+affineshift_predims
+
+render_only
+render_test_path = /home/anish1/evdnerf/test_configs/transforms_test_validation.json
+ft_file = /home/anish1/evdnerf/pretrained_weights/lego.tar
