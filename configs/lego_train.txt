@@ -1,6 +1,6 @@
 expname = exp
 workspace = logs
-root_path = /home/anish1/evdnerf
+root_path = /home/user/EvDNeRF
 datadir = data/public_datasets/lego-32
 dataset_type = events-multiview
 

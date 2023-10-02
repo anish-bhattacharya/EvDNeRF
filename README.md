@@ -4,6 +4,13 @@ This codebase is based on the paper EvDNeRF: Reconstructing Event Data with Dyna
 
 ## Installation
 
+First, clone the package and make a couple necessary directories:
+```
+git clone git@github.com:anish-bhattacharya/EvDNeRF.git
+cd EvDNeRF
+mkdir data logs
+```
+
 ### Preferred method (docker)
 
 We provide a docker container that can be pulled from dockerhub.
@@ -12,7 +19,7 @@ docker pull evdnerf/evdnerf:dev-user
 ```
 
 ```
-docker run -d --rm -it --gpus all -v /home/$USER/evdnerf:/home/user/evdnerf evdnerf/evdnerf:dev-user
+docker run -d --rm -it --gpus all -v /path/to/EvDNeRF:/home/user/EvDNeRF evdnerf/evdnerf:dev-user
 ```
 
 This will run a docker container image, the name of which can be seen in the output of `docker ps`. Start a shell in the docker container via:
@@ -20,7 +27,7 @@ This will run a docker container image, the name of which can be seen in the out
 docker exec -it -u root <running_docker_image_name> bash
 ```
 
-Now you should be able to run an example train or test configuration (see following sections).
+Now you should be able to run an example train or test configuration within this docker container (see following sections).
 
 ### Alternate method (conda env, borrowed from D-NeRF)
 
@@ -43,7 +50,7 @@ You will have to install additional dependencies manually; we have not provided 
 
 We provide datasets `public_datasets` at the following link to train EvDNeRF models from simulated and real datasets. After extracting the datasets tar, please read the contained, short README.
 
-[Data Google Drive Link](https://drive.google.com/drive/folders/1fIMukIFCYYE7u_wk-tuFnlyE4mrfCA0i?usp=sharing)
+[Data Google Drive Link](https://drive.google.com/drive/folders/1LMw7fp4jwhLv-pgETeVGGqonqRr7--WV?usp=sharing)
 
 ### Example training experiment
 
@@ -57,15 +64,13 @@ python run_evdnerf.py --config configs/jet_train.txt
 ```
 This command will run training on the `jet-*` dataset. Progressive weights and validation are saved to a log folder: `./logs/<exp_datetime>`. Any weights file absolute path can then be inputted as the `ft_file` argument to test on.
 
-To train a normal D-NeRF model without events, refer to `jet_train_dnerf.txt`; the key argument is `dnerf`.
-
 ## Test
 
-### Pre-trained weights
+### Pretrained weights
 
-First download pre-trained weights. They should placed in the directory `evdnerf/pretrained_weights`. This is the same link as the one above.
+First download pretrained weights. They should placed in the directory `evdnerf/pretrained_weights`. This is the same link as the one above.
 
-[Data Google Drive Link](https://drive.google.com/drive/folders/1fIMukIFCYYE7u_wk-tuFnlyE4mrfCA0i?usp=sharing)
+[Data Google Drive Link](https://drive.google.com/drive/folders/1LMw7fp4jwhLv-pgETeVGGqonqRr7--WV?usp=sharing)
 
 ### Example test experiment
 
@@ -81,4 +86,4 @@ When finished, resulting event batches in the form of images are found in `./log
 
 ## Data generation
 
-Coming soon!
+Coming soon for simulated and real data generation!

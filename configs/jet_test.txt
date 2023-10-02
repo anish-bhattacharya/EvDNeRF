@@ -1,6 +1,6 @@
 expname = exp
 workspace = logs
-root_path = /home/user/evdnerf
+root_path = /home/user/EvDNeRF
 datadir = data/public_datasets/jet-down-32
 dataset_type = events-multiview
 
@@ -44,6 +44,6 @@ gamma = 2.2
 affineshift_predims
 
 render_only
-render_test_path = /home/user/evdnerf/test_configs/transforms_test_validation.json
-ft_file = /home/user/evdnerf/pretrained_weights/jet-down.tar
+render_test_path = /home/user/EvDNeRF/test_configs/transforms_test_validation.json
+ft_file = /home/user/EvDNeRF/pretrained_weights/jet-down.tar
 

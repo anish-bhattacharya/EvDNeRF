@@ -1,6 +1,6 @@
 expname = exp
 workspace = logs
-root_path = /home/user/evdnerf
+root_path = /home/user/EvDNeRF
 datadir = data/public_datasets/real-fork-100
 dataset_type = events-multiview
 
@@ -42,5 +42,5 @@ batch_over_images
 use_two_models_for_fine
 
 render_only
-render_test_path = /home/user/evdnerf/test_configs/transforms_test_4v-100t-real-val.json
-ft_file = /home/user/evdnerf/pretrained_weights/real-fork-2.tar
+render_test_path = /home/user/EvDNeRF/test_configs/transforms_test_4v-100t-real-val.json
+ft_file = /home/user/EvDNeRF/pretrained_weights/real-fork-2.tar

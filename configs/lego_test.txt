@@ -1,6 +1,6 @@
 expname = exp
 workspace = logs
-root_path = /home/anish1/evdnerf
+root_path = /home/user/EvDNeRF
 datadir = data/public_datasets/lego-32
 dataset_type = events-multiview
 
@@ -44,5 +44,5 @@ ev_threshold_loss = 1.0
 affineshift_predims
 
 render_only
-render_test_path = /home/anish1/evdnerf/test_configs/transforms_test_validation.json
-ft_file = /home/anish1/evdnerf/pretrained_weights/lego.tar
+render_test_path = /home/user/EvDNeRF/test_configs/transforms_test_validation.json
+ft_file = /home/user/EvDNeRF/pretrained_weights/lego.tar
