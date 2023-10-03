@@ -1,6 +1,15 @@
 # EvDNeRF: Reconstructing Event Data with Dynamic Neural Radiance Fields
 
-This codebase is based on the paper EvDNeRF: Reconstructing Event Data with Dynamic Neural Radiance Fields.
+We train dynamic neural radiance fields to predict eventstreams from novel viewpoints and timestamps of a given scene. We share the code for data generation of simulated and real data, as well as code to train and test EvDNeRF models. This codebase was used for the paper EvDNeRF: Reconstructing Event Data with Dynamic Neural Radiance Fields.
+
+<!-- ![Jet-Down render](media/jd.gif)
+![Multi render](media/multi.gif) -->
+
+<p align="center">
+  <img src="media/jd.gif" alt="Jet-Down render" width="150" height="150" />
+  <img src="media/multi.gif" alt="Multi render" width="150" height="150" />
+  <img src="media/real-fork.gif" alt="Real-Fork render" width="200" height="150" />
+</p>
 
 ## Installation
 
