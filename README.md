@@ -1,5 +1,7 @@
 # EvDNeRF: Reconstructing Event Data with Dynamic Neural Radiance Fields
 
+<font size="3"><u>[Project page](https://www.anishbhattacharya.com/research/evdnerf)</u></font>
+
 We train dynamic neural radiance fields to predict eventstreams from novel viewpoints and timestamps of a given scene. We share the code for data generation of simulated and real data, as well as code to train and test EvDNeRF models. This codebase was used for the paper EvDNeRF: Reconstructing Event Data with Dynamic Neural Radiance Fields.
 
 <p align="center">
