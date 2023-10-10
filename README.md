@@ -106,5 +106,11 @@ Coming soon for simulated and real data generation!
 This codebase is based on the [implementation of D-NeRF](https://github.com/albertpumarola/D-NeRF).
 
 ## Citation
-
-We will soon include an Arxiv citation that we ask you cite if you use any part of this work.
+```
+@article{bhattacharya2023evdnerf,
+    title={EvDNeRF: Reconstructing Event Data with Dynamic Neural Radiance Fields},
+    author={Bhattacharya, Anish and Madaan, Ratnesh and Cladera, Fernando and Vemprala, Sai and Bonatti, Rogerio and Daniilidis, Kostas and Kapoor, Ashish and Kumar, Vijay and Matni, Nikolai and Gupta, Jayesh K},
+    journal={arXiv preprint arXiv:2310.02437},
+    year={2023}
+}
+```
