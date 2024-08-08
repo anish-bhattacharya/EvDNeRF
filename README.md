@@ -58,7 +58,7 @@ You will have to install additional dependencies manually; we have not provided 
 
 We provide datasets `public_datasets` at the following link to train EvDNeRF models from simulated and real datasets. After extracting the datasets tar, please read the contained, short README.
 
-[Data Google Drive Link](https://drive.google.com/drive/folders/1LMw7fp4jwhLv-pgETeVGGqonqRr7--WV?usp=sharing)
+[Data Link](https://upenn.box.com/v/EvDNeRF-datashare)
 
 ### Example training experiment
 
@@ -83,7 +83,7 @@ tensorboard --logdir logs --port 8000
 
 First download pretrained weights. They should placed in the directory `EvDNeRF/pretrained_weights`. This is the same link as the one above.
 
-[Data Google Drive Link](https://drive.google.com/drive/folders/1LMw7fp4jwhLv-pgETeVGGqonqRr7--WV?usp=sharing)
+[Data Link](https://upenn.box.com/v/EvDNeRF-datashare)
 
 ### Example test experiment
 
